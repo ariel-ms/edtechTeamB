@@ -1,0 +1,79 @@
+{
+    "classes": [
+        {
+            "name": "cs 61A",
+            "children": [
+                {
+                    "name": "Special Academy P",
+                    "information": "Pfmdksfd fdsfjdsk fdmsmfdklsm",
+                    "active": "32"
+                },
+                {
+                    "name": "Name2 Academy P",
+                    "information": "information 2 fdsfjdsk fdmsmfdklsm",
+                    "active": "43"
+                }
+            ]
+        },
+        {
+            "name": "cs70",
+            "children": [
+                {
+                    "name": "fmdksl fds P",
+                    "information": "ferfrefo fdsfjdsk",
+                    "active": "32"
+                }
+            ]
+        },
+        {
+            "name": "chem 1AL",
+            "children": [
+                {
+                    "name": "fmdksl fds P",
+                    "information": "ferfrefo fdsfjdsk",
+                    "active": "32"
+                }
+            ]
+        },
+        {
+            "name": "math 1B",
+            "children": [
+                {
+                    "name": "fmdksl fds P",
+                    "information": "ferfrefo fdsfjdsk",
+                    "active": "32"
+                }
+            ]
+        },
+        {
+            "name": "UGBA 192",
+            "children": [
+                {
+                    "name": "fmdksl fds P",
+                    "information": "ferfrefo fdsfjdsk",
+                    "active": "32"
+                }
+            ]
+        },
+        {
+            "name": "E7",
+            "children": [
+                {
+                    "name": "fmdksl fds P",
+                    "information": "ferfrefo fdsfjdsk",
+                    "active": "32"
+                }
+            ]
+        },
+        {
+            "name": "Anthro 3AC",
+            "children": [
+                {
+                    "name": "fmdksl fds P",
+                    "information": "ferfrefo fdsfjdsk",
+                    "active": "32"
+                }
+            ]
+        }
+    ]
+}
