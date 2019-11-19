@@ -8,14 +8,15 @@ import { ToastController } from '@ionic/angular';
 })
 export class ClassesComponent implements OnInit {
 
-  @Input('class') class: any;
-  constructor(private toatCtrl: ToastController) { }
+  @Input('lecture') lecture: any;
+  
+  constructor(private toastCTrl: ToastController) { }
 
   ngOnInit() {}
 
-  async selectClass(class) {
+  async selectClass(lecture) {
     let toast = await this.toastCTrl.create({
-      message: `Added to the cart: ${class.name}`
+      message: `Added lecture: ${lecture.name}`
     });
     toast.present();
   }

@@ -3,15 +3,15 @@
     <ion-col size="9">
       <ion-row no-padding>
         <ion-col size="12">
-          <h3>{{class.name}}</h3>
+          <h3>{{lecture.name}}</h3>
         </ion-col>
         <ion-col size="12">
-          <p text-lowercase color = "medium">{{class.information}}</p>
+          <p text-lowercase color = "medium">{{lecture.information}}</p>
         </ion-col>
       </ion-row>
     </ion-col>
     <ion-col size="3" text-right>
-      <ion-button fill="outline" (click) = "selectClass(class)">{{ class.price }}</ion-button>
+      <ion-button fill="outline" (click) = "selectClass(class)">{{ lecture.active }}</ion-button>
     </ion-col>
   </ion-row>
 </ion-item>
