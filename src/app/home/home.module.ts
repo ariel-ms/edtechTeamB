@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-// dev branch
 import { SharedComponentsModule } from '../components/shared-components.module';
 
 @NgModule({
