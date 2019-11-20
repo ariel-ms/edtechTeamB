@@ -9,7 +9,6 @@ import { ToastController } from '@ionic/angular';
 export class ClassesComponent implements OnInit {
 
   @Input('lecture') lecture: any;
-  
   constructor(private toastCTrl: ToastController) { }
 
   ngOnInit() {}

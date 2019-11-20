@@ -12,8 +12,9 @@ export class HomePage {
   automaticClose = false;
   constructor(private http: HttpClient) {
     this.http.get('assets/information.json').subscribe(res => {
+      // classes is name of top level in json file
       this.information = res['classes'];
-      this.information[0].open = true;
+      this.information[0].open = false;
     })
   }
 

@@ -1,17 +1,17 @@
-<ion-item class="child-item" text-wrap detail="false" lines="none">
-  <ion-row no-padding align-items-center>
+<ion-item class="child-item ion-text-wrap" detail="false" lines="none">
+  <ion-row class="ion-no-padding ion-align-items-center">
     <ion-col size="9">
-      <ion-row no-padding>
+      <ion-row class="ion-no-padding">
         <ion-col size="12">
-          <h3>{{lecture.name}}</h3>
+          <h5 class="bold">{{lecture.name}}</h5>
         </ion-col>
         <ion-col size="12">
-          <p text-lowercase color = "medium">{{lecture.information}}</p>
+          <p class="ion-text-lowercase" color="medium">{{ lecture.information }}</p>
         </ion-col>
       </ion-row>
     </ion-col>
-    <ion-col size="3" text-right>
-      <ion-button fill="outline" (click) = "selectClass(class)">{{ lecture.active }}</ion-button>
+    <ion-col size="3" class="ion-text-right">
+      <ion-button fill="outline" (click) = "selectClass(lecture)">{{ lecture.active }}</ion-button>
     </ion-col>
   </ion-row>
 </ion-item>
