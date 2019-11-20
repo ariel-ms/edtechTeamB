@@ -1,0 +1,79 @@
+{
+    "classes": [
+        {
+            "name": "cs 61A",
+            "children": [
+                {
+                    "name": "HW10",
+                    "information": "Working on ants project at moffit",
+                    "active": "5"
+                },
+                {
+                    "name": "HW11",
+                    "information": "Wroking on recursion homework",
+                    "active": "3"
+                }
+            ]
+        },
+        {
+            "name": "cs70",
+            "children": [
+                {
+                    "name": "HW11",
+                    "information": "Studying for midterm in moffit",
+                    "active": "3"
+                }
+            ]
+        },
+        {
+            "name": "chem 1AL",
+            "children": [
+                {
+                    "name": "Lab report",
+                    "information": "Writing lab report 12 at Yalis",
+                    "active": "5"
+                }
+            ]
+        },
+        {
+            "name": "math 1B",
+            "children": [
+                {
+                    "name": "Series discussion",
+                    "information": "Trying to learn series at VSLB",
+                    "active": "1"
+                }
+            ]
+        },
+        {
+            "name": "UGBA 192",
+            "children": [
+                {
+                    "name": "Project1",
+                    "information": "Working on project onn Moffit 4th floor",
+                    "active": "2"
+                }
+            ]
+        },
+        {
+            "name": "E7",
+            "children": [
+                {
+                    "name": "HW7",
+                    "information": "doing homwework 7 @Mainstacks",
+                    "active": "4"
+                }
+            ]
+        },
+        {
+            "name": "Anthro 3AC",
+            "children": [
+                {
+                    "name": "Paper",
+                    "information": "Writing paper in BWW",
+                    "active": "5"
+                }
+            ]
+        }
+    ]
+}

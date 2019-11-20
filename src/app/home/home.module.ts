@@ -5,18 +5,22 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-// dev branch
+import { SharedComponentsModule } from '../components/shared-components.module';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpClientModule,
     RouterModule.forChild([
       {
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    SharedComponentsModule
   ],
   declarations: [HomePage]
 })
