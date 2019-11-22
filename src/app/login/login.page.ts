@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
   async login() {
     const { username, password } = this
     try {
-      const rest = await this.afAuth.auth.signInWithEmailAndPassword(username, password)
+      const rest = await this.afAuth.auth.signInWithEmailAndPassword(username + "@berkeley.edu", password)
     } catch(err) {
       console.dir(err)
       if (err.code === "auth/user-not-found") {

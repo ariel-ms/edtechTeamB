@@ -24,7 +24,7 @@ export class RegisterPage implements OnInit {
       return console.error("Passwords dont match")
     }
     try {
-      const res = await this.afAuth.auth.createUserWithEmailAndPassword(username, password);
+      const res = await this.afAuth.auth.createUserWithEmailAndPassword(username + "@berkeley.edu", password);
       console.log(res)
     } catch(err) {
       console.dir(error);
