@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
+import { NavController } from '@ionic/angular';
 import { error } from 'util';
 
 @Component({
@@ -13,7 +14,7 @@ export class RegisterPage implements OnInit {
   password: string = ""
   cpassword: string = ""
 
-  constructor(public afAuth: AngularFireAuth) { }
+  constructor(public afAuth: AngularFireAuth, public navCtrl: NavController) { }
 
   ngOnInit() {
   }
@@ -26,6 +27,9 @@ export class RegisterPage implements OnInit {
     try {
       const res = await this.afAuth.auth.createUserWithEmailAndPassword(username + "@berkeley.edu", password);
       console.log(res)
+      if (res) {
+        this.navCtrl.navigateForward('/login');
+      }
     } catch(err) {
       console.dir(error);
     }
