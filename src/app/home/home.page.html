@@ -1,14 +1,72 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+  <ion-toolbar class="new-background-color">
+    <ion-title class ="title" text-center>
+      CollabConnect
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class = "joinCreate">
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <p class = "about" text-center>Welcome to CollabConnect! Click one of the options below to get started:</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header class="new-background-color">
+            </ion-card-header>
+            <ion-item>
+              <ion-button color = "medium" class = "center">Join Study Group</ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-card-header class="new-background-color">
+            </ion-card-header>
+            <ion-item>
+              <ion-button color = "medium" class = "center">Create Study Group</ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-content class = "topGroups">
+  <div class="ion-padding">
+    <p class = "topThree" text-center>Top 3 Study Groups Right Now</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header class="new-background-color">
+            </ion-card-header>
+            <ion-item>
+              <ion-button color = "medium" class = "center">CS 61A - Moffitt Library</ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-card-header class="new-background-color">
+            </ion-card-header>
+            <ion-item>
+              <ion-button color = "medium" class = "center">Sociology 3AC - Starbucks</ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card>
+            <ion-card-header class="new-background-color">
+            </ion-card-header>
+            <ion-item>
+              <ion-button color = "medium" class = "center">CS 70 - Soda Hall</ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
