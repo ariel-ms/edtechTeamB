@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Create a Study Group</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+		  <ion-label position="floating">Course Title</ion-label>
+		  <ion-input type="text" [(ngModel)]="ctitle"></ion-input>
+		</ion-item>
+	  
+		<ion-item>
+		  <ion-label position="floating">Assignment</ion-label>
+		  <ion-input type="text" [(ngModel)]="assignment"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+		  <ion-label position="floating">Location</ion-label>
+		  <ion-input type="text" [(ngModel)]="location"></ion-input>
+    </ion-item>
+
+    <ion-item>
+		  <ion-label position="floating"># of People</ion-label>
+		  <ion-input type="text" [(ngModel)]="npeople"></ion-input>
+		</ion-item>
+	  </ion-list>
+	  <ion-button fill="solid" expand="block" color="primary" (click)="createGroup()">Create</ion-button>	
+</ion-content>
