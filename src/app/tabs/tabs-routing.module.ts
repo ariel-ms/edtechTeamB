@@ -19,6 +19,12 @@ const routes: Routes = [
         children: [
           { path: '' , loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)}
         ]
+      },
+      {
+        path: 'newgroup',
+        children: [
+          { path: '', loadChildren: () => import('../newgroup/newgroup.module').then( m => m.NewgroupPageModule)}
+        ]
       }
     ]
   },
