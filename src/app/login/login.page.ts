@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +12,9 @@ export class LoginPage implements OnInit {
   username: string = ""
   password: string = ""
 
-  constructor(private afAuth: AngularFireAuth, public navCtrl: NavController) { }
+  constructor(
+    private afAuth: AngularFireAuth,
+    public router: Router) { }
 
   ngOnInit() {
   }
@@ -22,7 +24,7 @@ export class LoginPage implements OnInit {
     try {
       const res = await this.afAuth.auth.signInWithEmailAndPassword(username + "@berkeley.edu", password)
       if (res) {
-        this.navCtrl.navigateForward('/home');
+        this.router.navigate(['./tabs/home']);
       }
     } catch(err) {
       console.dir(err)
