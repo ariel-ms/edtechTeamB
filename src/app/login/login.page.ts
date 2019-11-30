@@ -24,7 +24,7 @@ export class LoginPage implements OnInit {
     try {
       const res = await this.afAuth.auth.signInWithEmailAndPassword(username + "@berkeley.edu", password)
       if (res) {
-        this.router.navigate(['/home']);
+        this.router.navigate(['./tabs/home']);
       }
     } catch(err) {
       console.dir(err)
